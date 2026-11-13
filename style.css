@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+.currency-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#swap {
+    margin-top: 5px;
+    border: none;
+    background: #243b55;
+    color: white;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#swap:hover {
+    background: #00a6c7;
+}
+
+#convertBtn {
+    width: 100%;
+    padding: 15px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#convertBtn:hover {
+    background: #00a6c7;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    background: #eef7ff;
+    border-radius: 10px;
+}
+
+.result p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.result h2 {
+    color: #007bff;
+    font-size: 30px;
+    overflow-wrap: anywhere;
+}
+
+#dateInfo {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#error {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 22px 16px;
+    }
+
+    .currency-row {
+        gap: 6px;
+    }
+
+    select {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
